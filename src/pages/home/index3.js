@@ -6,7 +6,7 @@ import Blogcart from '../../widgets/blog/blogcart';
 import CommingSoonCounter from '../../widgets/common/counter';
 import Herosection2 from '../../widgets/herosection/herosection2';
 import Clientlogo from '../../widgets/home1/clientlogo';
-import Newcollection from '../../widgets/home1/newcollection';
+import Newcollection2 from '../../widgets/home1/newcollection2';
 import Newarrived from '../../widgets/home3/newarrived';
 
 class index3 extends Component {
@@ -41,7 +41,7 @@ class index3 extends Component {
                         </div>
                       </Col>
                     </Row>
-                    <Newcollection />
+                    <Newcollection2 />
                   </div>
                 </Col>
               </Row>

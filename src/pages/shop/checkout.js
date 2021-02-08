@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
+import Pageheading from '../../widgets/pageheading';
 
 class checkout extends Component {
   constructor(props) {

@@ -36,6 +36,7 @@ class Herosection6 extends Component {
                         {...this.state.options}
                         dotData="false"
                         nav="true"
+                        navText={["<span class='las la-arrow-left'><span></span></span>","<span class='las la-arrow-right'><span></span></span>"]}
                     >
                     <div className="item bg-pos-rb" style={{ backgroundImage: `url(${require(`../../assets/images/kids/bg/01.jpg`)})` }}>
                         <Container className="h-100">

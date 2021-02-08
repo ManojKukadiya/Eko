@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Pageheading from '../../widgets/pageheading';
 
 class cart extends Component {
   constructor(props) {

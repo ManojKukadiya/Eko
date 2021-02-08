@@ -20,6 +20,7 @@ class Herosection extends Component {
                     nav
                     items={1}
                     autoplay={true}
+                    navText={["<span class='las la-arrow-left'><span></span></span>","<span class='las la-arrow-right'><span></span></span>"]}
                   >
                     <div className="item bg-pos-rt"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/01.jpg`)})` }}>
                         <Container className="h-100">
