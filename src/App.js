@@ -7,7 +7,7 @@ import Header from './layout/header/header';
 // import Footer from './layout/footer/footer';
 // import Index from './pages/Index/index1';
 
-//import $ from 'jquery';
+import $ from 'jquery';
 
 import './App.css';
 import './vendor.js';

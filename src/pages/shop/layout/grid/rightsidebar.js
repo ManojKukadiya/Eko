@@ -7,6 +7,7 @@ import { connect } from 'react-redux';
 import Topbar from '../../../../widgets/filter/Topbar';
 import Sidebar from '../../../../widgets/filter/Sidebar';
 import Listview from '../../../../widgets/shop/listview';
+import Pageheading from '../../../../widgets/pageheading';
 
 const ProductParPage = 9;
 class rightsidebar extends Component {

@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import OwlCarousel from 'react-owl-carousel';
 window.fn = OwlCarousel;
-
 import Herosection6 from '../../widgets/herosection/herosection6';
 import { Link } from 'react-router-dom';
+import { Parallax } from 'react-parallax';
 import Instafeed from '../../widgets/aboutus/instafeed';
 import Processstep2 from '../../widgets/home5/processstep2';
 import Clientlogo from '../../widgets/home1/clientlogo';
@@ -223,7 +223,9 @@ class index6 extends Component {
               </section>
               {/*product end*/}
               {/*product ad start*/}
-              <section className="custom-py-1 parallaxie" style={{ backgroundImage: `url(${require(`../../assets/images/kids/bg/03.jpg`)})` }}>
+              <Parallax bgImage={require(`../../assets/images/kids/bg/03.jpg`)} bgClassName="custom-py-1" >
+
+              <section>
                 <Container>
                   <Row className="justify-content-center text-center">
                     <Col lg={8} className="col-12"> 
@@ -233,6 +235,7 @@ class index6 extends Component {
                   </Row>
                 </Container>
               </section>
+              </Parallax>
               {/*product ad end*/}
               {/*product start*/}
               <section>

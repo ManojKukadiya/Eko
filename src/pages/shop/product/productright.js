@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import OwlCarousel from 'react-owl-carousel';
+import Pageheading from '../../../widgets/pageheading';
 window.fn = OwlCarousel;
 
 class productright extends Component {

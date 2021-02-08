@@ -82,11 +82,11 @@ class Header extends Component {
                                                         </DropdownMenu>
                                                     </UncontrolledDropdown>
                                                     : (navlink.type && navlink.type === 'megaMenu') ?
-                                                        <UncontrolledDropdown nav inNavbar key={index}>
+                                                        <UncontrolledDropdown nav inNavbar key={index} className="ma">
                                                             <DropdownToggle nav caret >
                                                                 {navlink.menu_title}
                                                             </DropdownToggle>
-                                                            <DropdownMenu id={`submenu_${index}`} className="custom-drop">
+                                                            <DropdownMenu id={`submenu_${index}`} className="custom-drop childsubmenu">
                                                                 <div className="container p-0">
                                                                     <Row className="w-100 no-gutters">
                                                                         {navlink.child_routes && navlink.child_routes.map((subnavlink, index) => (
@@ -96,13 +96,16 @@ class Header extends Component {
                                                                                 {/* Links */}
                                                                                 <ul className="list-unstyled">
                                                                                     {subnavlink.child_routes && subnavlink.child_routes.map((megamenu, index) => (
-                                                                                        <li> <Link to={megamenu.path} >{megamenu.menu_title}</Link>
+                                                                                        <li > 
+                                                                                            <Link to={megamenu.path} onClick={this.handleClick.bind(this)}>{megamenu.menu_title}</Link>
                                                                                         </li>
                                                                                     ))}
                                                                                 </ul>
                                                                             </div>
-
                                                                         ))}
+                                                                        <div className="col-12 col-md-4">
+                                                                            <img className="img-fluid rounded-bottom rounded-top" src={require(`../../assets/images/header-img2.jpg`)} alt="..." />
+                                                                        </div>
                                                                     </Row>
                                                                 </div>
                                                             </DropdownMenu>

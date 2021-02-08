@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'reactstrap';
 import CommingSoonCounter from '../../widgets/common/counter';
 import Herosection5 from '../../widgets/herosection/herosection5';
 import { Link } from 'react-router-dom';
+import { Parallax } from 'react-parallax';
 import Processstep2 from '../../widgets/home5/processstep2';
 import OwlCarousel from 'react-owl-carousel';
 import Ourproduct from '../../widgets/home1/ourproduct1';
@@ -235,17 +236,19 @@ class index5 extends Component {
           </section>
           {/*hot deal end*/}
           {/*product ad start*/}
-          <section className="custom-py-1 parallaxie" style={{ backgroundImage: `url(${require(`../../assets/images/furniture/01.png`)})` }}>
-            <Container>
-              <Row>
-                <div className="col-12 col-lg-6">
-                  <h4 className="mb-3"><span className="text-primary">2020</span> Collection</h4>
-                  <h2 className="mb-3 font-w-7">New Top Trendy Furniture Accessories</h2>
-                  <Link className="btn btn-primary btn-animated" to="#"><i className="las la-shopping-cart mr-1" /> Shop Now</Link>
-                </div>
-              </Row>
-            </Container>
-          </section>
+          <Parallax bgImage={require(`../../assets/images/furniture/01.png`)} bgClassName="custom-py-1" >
+            <section>
+              <Container>
+                <Row>
+                  <div className="col-12 col-lg-6">
+                    <h4 className="mb-3"><span className="text-primary">2020</span> Collection</h4>
+                    <h2 className="mb-3 font-w-7">New Top Trendy Furniture Accessories</h2>
+                    <Link className="btn btn-primary btn-animated" to="#"><i className="las la-shopping-cart mr-1" /> Shop Now</Link>
+                  </div>
+                </Row>
+              </Container>
+            </section>
+          </Parallax>
           {/*product ad end*/}
           {/*blog start*/}
           <section>

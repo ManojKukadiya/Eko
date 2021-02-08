@@ -53,32 +53,56 @@ export default [
       "type": "megaMenu",
       "child_routes": [
          {
-            "path": "/",
+            "path": "/grid-left-sidebar",
             "menu_title": "Shop Layout",
             "icon": "arrow_right_alt",
             "type": "childsubMenu",
             "child_routes": [
                {
-                  "path": "/about-us",
+                  "path": "/grid-left-sidebar",
                   "menu_title": "Shop Grid - Left Sidebar",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/about-us2",
+                  "path": "/grid-right-sidebar",
                   "menu_title": "Shop Grid - Right Sidebar",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/career",
+                  "path": "/grid-no-sidebar",
                   "menu_title": "Shop Grid - No Sidebar",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/career-single",
+                  "path": "/grid-full-sidebar",
                   "menu_title": "Shop Grid - Full Width",
+                  "icon": "arrow_right_alt",
+                  "child_routes": null
+               },
+               {
+                  "path": "/list-left-sidebar",
+                  "menu_title": "Shop List - Left Sidebar",
+                  "icon": "arrow_right_alt",
+                  "child_routes": null
+               },
+               {
+                  "path": "/list-right-sidebar",
+                  "menu_title": "Shop List - Right Sidebar",
+                  "icon": "arrow_right_alt",
+                  "child_routes": null
+               },
+               {
+                  "path": "/list-no-sidebar",
+                  "menu_title": "Shop List - No Sidebar",
+                  "icon": "arrow_right_alt",
+                  "child_routes": null
+               },
+               {
+                  "path": "/list-full-sidebar",
+                  "menu_title": "Shop List - Full Width",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
@@ -91,25 +115,25 @@ export default [
             "type": "childsubMenu",
             "child_routes": [
                {
-                  "path": "/blog-card",
+                  "path": "/product-single-left/Women/1",
                   "menu_title": "Product Left Image",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/blog-listing-1",
+                  "path": "/product-single-right/Women/1",
                   "menu_title": "Product Right Image",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/blog-listing-2",
+                  "path": "/cart",
                   "menu_title": "Product Cart",
                   "icon": "arrow_right_alt",
                   "child_routes": null
                },
                {
-                  "path": "/blog-single",
+                  "path": "/checkout",
                   "menu_title": "Product Checkout",
                   "icon": "arrow_right_alt",
                   "child_routes": null
