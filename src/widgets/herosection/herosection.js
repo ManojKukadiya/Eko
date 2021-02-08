@@ -16,7 +16,7 @@ class Herosection extends Component {
             <section className="banner pos-r p-0">
                  <OwlCarousel
                     className="banner-slider owl-carousel no-pb owl-2"
-                    dotData={false}
+                    dots={false}
                     nav
                     items={1}
                     autoplay={true}

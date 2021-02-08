@@ -15,7 +15,7 @@ class Processstep extends Component {
                   <i className="las la-truck ic-2x text-primary" />
                 </div>
                 <div>
-                  <h5 className="mb-1">Free Shipping</h5>
+                  <h5 className="mb-1 text-white">Free Shipping</h5>
                   <p className="mb-0">Writing result-oriented</p>
                 </div>
               </div>
@@ -26,7 +26,7 @@ class Processstep extends Component {
                   <i className="las la-hand-holding-usd ic-2x text-primary" />
                 </div>
                 <div>
-                  <h5 className="mb-1">Money Return</h5>
+                  <h5 className="mb-1 text-white">Money Return</h5>
                   <p className="mb-0">Writing result-oriented</p>
                 </div>
               </div>
@@ -37,7 +37,7 @@ class Processstep extends Component {
                   <i className="las la-lock ic-2x text-primary" />
                 </div>
                 <div>
-                  <h5 className="mb-1">Secure Payment</h5>
+                  <h5 className="mb-1 text-white">Secure Payment</h5>
                   <p className="mb-0">Writing result-oriented</p>
                 </div>
               </div>
@@ -48,7 +48,7 @@ class Processstep extends Component {
                   <i className="las la-headset ic-2x text-primary" />
                 </div>
                 <div>
-                  <h5 className="mb-1">24/7 Support</h5>
+                  <h5 className="mb-1 text-white">24/7 Support</h5>
                   <p className="mb-0">Writing result-oriented</p>
                 </div>
               </div>

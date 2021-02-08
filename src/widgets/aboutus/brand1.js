@@ -8,7 +8,8 @@ class Brand1 extends Component {
         this.state = {
             options: {
                 loop: true,
-                nav: true,
+                nav: false,
+                dots: false,
                 responsive: {
                     0: {
                         items: 1,
@@ -29,7 +30,7 @@ class Brand1 extends Component {
                 className="owl-carousel no-pb"
                 {...this.state.options}
                 center="true"
-                dotData="false"
+                dotData=""
                 nav="true" >
                 <div className="item">
                     <img className="img-fluid d-inline" src={require(`../../assets/images/client/01.png`)} alt="" />

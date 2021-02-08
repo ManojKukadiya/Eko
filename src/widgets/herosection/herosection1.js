@@ -10,7 +10,8 @@ class Herosection1 extends Component {
         this.state = {
             options: {
                 loop: true,
-                nav:true,
+                dots:false,
+                nav:false,
                 responsive:{
                     0: {
                         items: 1,
@@ -66,6 +67,7 @@ class Herosection1 extends Component {
                             className="banner-slider owl-carousel no-pb h-100"
                             {...this.state.options}
                             dotData="false"
+
                         >
                         <div className="item bg-pos-rt"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/06.jpg`)})` }}>
                             <Container className="h-100">

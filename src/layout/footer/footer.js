@@ -125,7 +125,7 @@ class Footer extends Component {
                     </Row>
                     <hr className="my-8" />
                     <Row className="text-muted align-items-center">
-                        <Col md={7}>Copyright ©2020 All rights reserved | This Template is made by <i className="lar la-heart text-primary heartBeat2" />  <u><Link className="text-primary" to="#">Skytouch Infotech</Link></u>
+                        <Col md={7}>Copyright 2021 All rights reserved | This Template is made by <i className="lar la-heart text-primary heartBeat2" />  <u><Link className="text-primary" to="#">Skytouch Infotech</Link></u>
                         </Col>
                         <Col md={5} className="text-md-right mt-3 mt-md-0">
                             <ul className="list-inline mb-0">

@@ -21,28 +21,28 @@ class Instafeed extends Component {
                 </Col>
                 <Col sm={4} md={2} className="col-6">
                     <Link className="insta-item" to="#">
-                        <img className="img-fluid h-100" src={require(`../../assets/images/insta/01.jpg`)} alt="" />
+                        <img className="img-fluid" src={require(`../../assets/images/insta/01.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
                 <Col sm={4} md={2} className="col-6">
                     <Link className="insta-item" to="#">
-                        <img className="img-fluid h-100" src={require(`../../assets/images/insta/02.jpg`)} alt="" />
+                        <img className="img-fluid" src={require(`../../assets/images/insta/02.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
                 <Col sm={4} md={2} className="col-6 order-md-1">
                     <Link className="insta-item" to="#">
-                        <img className="img-fluid h-100" src={require(`../../assets/images/insta/03.jpg`)} alt="" />
+                        <img className="img-fluid" src={require(`../../assets/images/insta/03.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
                 <Col sm={4} md={2} className="col-6 order-md-1">
                     <Link className="insta-item" to="#">
-                        <img className="img-fluid h-100" src={require(`../../assets/images/insta/04.jpg`)} alt="" />
+                        <img className="img-fluid" src={require(`../../assets/images/insta/04.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>

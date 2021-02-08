@@ -18,7 +18,7 @@ class Ourproduct extends Component {
             options: {
                 loop: true,
                 nav: true,
-                dotData: false,
+                dots: false,
                 responsive: {
                     0: {
                         items: 1,
@@ -136,9 +136,8 @@ class Ourproduct extends Component {
                         </div>
                         <div className="col-lg-6 text-lg-right mt-4 mt-lg-0">
                             {/* Nav tabs */}
-                            <Nav tabs>
-                                <div className="nav nav-tabs d-inline-block justify-content-md-end" id="nav-tab" role="tablist">
-                                    <NavItem>
+                            <Nav tabs className="d-inline-block justify-content-md-end" id="nav-tab" role="tablist">
+                                <NavItem>
                                         <NavLink
                                             className={classnames({ active: this.state.activeTab === '1' })}
                                             onClick={() => { this.toggle('1'); }}
@@ -162,7 +161,6 @@ class Ourproduct extends Component {
                                             Best Seller
                                     </NavLink>
                                     </NavItem>
-                                </div>
                             </Nav>
                         </div>
                     </Row>

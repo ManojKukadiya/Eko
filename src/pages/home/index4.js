@@ -17,7 +17,7 @@ class index4 extends Component {
         this.state = {
           options: {
               loop: true,
-              nav:true,
+              nav:false,
               responsive:{
                   0: {
                       items: 1,

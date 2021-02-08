@@ -59,7 +59,7 @@ class contactus extends Component {
                     </Col>
                   </form>
                 </div>
-                <Col lg={10} className="mt-6 mt-lg-0">
+                <Col lg={4} className="mt-6 mt-lg-0">
                   <div className="shadow-sm rounded p-5">
                     <div className="mb-5">
                       <h6 className="text-primary mb-1">— Contact Info</h6>

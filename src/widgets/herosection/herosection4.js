@@ -10,7 +10,7 @@ class Herosection4 extends Component {
         this.state = {
             options: {
                 loop: true,
-                nav:true,
+                dots:false,
                 responsive:{
                     0: {
                         items: 1,
