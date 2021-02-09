@@ -4,7 +4,7 @@ import { toast,ToastContainer } from 'react-toastify';
 import { Row, Col, Button, Modal, ModalHeader, ModalBody } from 'reactstrap';
 import Productlist from '../../api/product';
 
-class Newcollection extends Component {
+class TradingProduct extends Component {
   constructor(props) {
     super(props);
     this.quickview = this.quickview.bind(this);
@@ -95,7 +95,7 @@ class Newcollection extends Component {
       <>
         <Row>
           <ToastContainer autoClose={900} />
-          {Productlist.map((productdata, index) => (index < 8) ?
+          {Productlist.map((productdata, index) => (index >= 24 && index < 32) ?
             <Col xl={3} lg={4} md={6}>
               <div className="card product-card">
                 {!this.WishlistItems(productdata.id) ?
@@ -232,4 +232,4 @@ class Newcollection extends Component {
   }
 }
 
-export default Newcollection;
+export default TradingProduct;

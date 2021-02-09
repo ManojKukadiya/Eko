@@ -53,19 +53,19 @@ class Footer extends Component {
                                 <div className="col-12 col-sm-4 mt-6 mt-sm-0 navbar-dark">
                                     <h5 className="mb-4 text-white">Top Products</h5>
                                     <ul className="navbar-nav list-unstyled mb-0">
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">T-Shirts</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">T-Shirts</Link>
                                         </li>
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">Sneakers &amp; Athletic</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">Sneakers &amp; Athletic</Link>
                                         </li>
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">Shirts &amp; Tops</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">Shirts &amp; Tops</Link>
                                         </li>
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">Sunglasses</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">Sunglasses</Link>
                                         </li>
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">Bags &amp; Wallets</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">Bags &amp; Wallets</Link>
                                         </li>
-                                        <li className="mb-3 nav-item"><Link className="nav-link" to="#">Accessories</Link>
+                                        <li className="mb-3 nav-item"><Link className="nav-link" to="/grid-left-sidebar">Accessories</Link>
                                         </li>
-                                        <li className="nav-item"><Link className="nav-link" to="#">Shoes</Link>
+                                        <li className="nav-item"><Link className="nav-link" to="/grid-left-sidebar">Shoes</Link>
                                         </li>
                                     </ul>
                                 </div>

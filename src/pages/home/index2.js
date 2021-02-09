@@ -6,10 +6,11 @@ import CommingSoonCounter from '../../widgets/common/counter';
 import Herosection1 from '../../widgets/herosection/herosection1';
 import Treadingproduct from '../../widgets/home1/treadingproduct';
 import Productbanner2 from '../../widgets/home2/productbanner2';
-import Processstep from '../../widgets/home1/processstep';
+import Processstep from '../../widgets/home2/processstep';
 import Ourproduct2 from '../../widgets/home2/ourproduct2';
 import Blogcart from '../../widgets/blog/blogcart';
 import Instafeed from '../../widgets/aboutus/instafeed';
+import Newsletter1 from '../../widgets/home1/newsletter1';
 window.fn = OwlCarousel;
 
 class index2 extends Component {
@@ -116,16 +117,7 @@ class index2 extends Component {
                   <ul className="countdown list-inline d-flex my-5">
                     <CommingSoonCounter time={'100150'} />
                   </ul>
-                  <div className="subscribe-form">
-                    <form id="mc-form" className="row align-items-center no-gutters mb-3">
-                      <Col>
-                        <input defaultValue name="EMAIL" className="email form-control input-2 bg-white" id="mc-email" placeholder="Email Address" required type="email" />
-                      </Col>
-                      <div className="col-auto">
-                        <input className="btn btn-primary overflow-auto" name="subscribe" defaultValue="Subscribe" type="submit" />
-                      </div>
-                    </form> <small>Get started for 1 Month free trial No Purchace required.</small>
-                  </div>
+                  <Newsletter1 />
                 </div>
               </Row>
             </Container>
