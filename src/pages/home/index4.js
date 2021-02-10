@@ -3,33 +3,20 @@ import { Col, Container, Row } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import CommingSoonCounter from '../../widgets/common/counter';
 import Herosection4 from '../../widgets/herosection/herosection4';
-import OwlCarousel from 'react-owl-carousel';
 import Newarrived from '../../widgets/home3/newarrived';
 import Testimonial1 from '../../widgets/aboutus/testimonial1';
 import Brand1 from '../../widgets/aboutus/brand1';
 import Blogcart from '../../widgets/blog/blogcart';
 import Processstep1 from '../../widgets/home4/processstep1';
-window.fn = OwlCarousel;
+import Specialproduct from '../../widgets/home4/specialproduct';
+import NewarrivedElectonic from '../../widgets/home4/newarrivedelectonic';
+
 
 class index4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
-          options: {
-              loop: true,
-              nav:false,
-              responsive:{
-                  0: {
-                      items: 1,
-                  },
-                  600: {
-                      items: 2,
-                  },
-                  1000: {
-                      items: 3,
-                  },
-              },
-          },
+         
       };
     }
     componentDidMount() {
@@ -38,12 +25,8 @@ class index4 extends Component {
     render() {
         return (
             <>
-        {/*hero section start*/}
           <Herosection4 />
-        {/*hero section end*/} 
-        {/*body content start*/}
         <div className="page-content">
-          {/*product ad start*/}
           <section>
             <Container>
               <Row>
@@ -56,7 +39,7 @@ class index4 extends Component {
                       <h6 className="text-white">Apple Collection</h6>
                       {/* Heading */}
                       <h3 className="text-white font-w-8"><span className="d-block">Sell On</span> Smart Devices</h3>
-                      {/* Link */} <Link className="btn btn-sm btn-primary btn-animated" to="#">Shop Now
+                      {/* Link */} <Link className="btn btn-sm btn-primary btn-animated" to="/grid-left-sidebar">Shop Now
                       </Link>
                     </div>
                   </div>
@@ -70,7 +53,7 @@ class index4 extends Component {
                       {/* Heading */}
                       <h3 className="font-w-7 bg-primary d-inline px-2 py-1 text-white">Best Electronic Product</h3>
                       <br />
-                      {/* Link */} <Link className="btn btn-sm btn-dark btn-animated mt-3" to="#">Shop Now
+                      {/* Link */} <Link className="btn btn-sm btn-dark btn-animated mt-3" to="/grid-left-sidebar">Shop Now
                       </Link>
                     </div>
                   </div>
@@ -84,7 +67,7 @@ class index4 extends Component {
                       <h6 className="text-dark">New Trend</h6>
                       {/* Heading */}
                       <h3 className="font-w-7">Portable<br /> Speaker</h3>
-                      {/* Link */} <Link className="btn btn-sm btn-primary btn-animated" to="#">Shop Now
+                      {/* Link */} <Link className="btn btn-sm btn-primary btn-animated" to="/grid-left-sidebar">Shop Now
                       </Link>
                     </div>
                   </div>
@@ -112,131 +95,7 @@ class index4 extends Component {
                     </h6>
                     <h2 className="mb-0">Special Products</h2>
                   </div>
-                  <OwlCarousel
-                        className="owl-carousel"
-                        {...this.state.options}
-                    >
-                    <div className="item">
-                      <div className="card product-card">
-                        <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
-                        </button>
-                        <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../assets/images/electronic/product/01.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../assets/images/electronic/product/01.jpg`)} alt="..." />
-                        </Link>
-                        <div className="card-info">
-                          <div className="card-body">
-                            <div className="product-title"><Link className="link-title" to="/product-single-left/Woman/1">Amazon Echo Speaker</Link>
-                            </div>
-                            <div className="mt-1"> <span className="product-price"><del className="text-muted">$35.00</del> $25.00</span>
-                              <div className="star-rating"><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="card-footer bg-transparent border-0">
-                            <div className="product-link d-flex align-items-center justify-content-center">
-                              <button className="btn btn-compare" data-toggle="tooltip" data-placement="top" title="Compare" type="button"><i className="las la-random" /> 
-                              </button>
-                              <button className="btn-cart btn btn-primary btn-animated mx-3" type="button"><i className="las la-shopping-cart mr-1" />
-                              </button>
-                              <button className="btn btn-view" data-toggle="tooltip" data-placement="top" title="Quick View"><span data-target="#quick-view" data-toggle="modal"><i className="las la-eye" /></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="card product-card">
-                        <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
-                        </button>
-                        <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../assets/images/electronic/product/02.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../assets/images/electronic/product/02.jpg`)} alt="..." />
-                        </Link>
-                        <div className="card-info">
-                          <div className="card-body">
-                            <div className="product-title"><Link className="link-title" to="/product-single-left/Woman/1">Canon EOS EF 75</Link>
-                            </div>
-                            <div className="mt-1"> <span className="product-price"><del className="text-muted">$24.00</del> $18.00</span>
-                              <div className="star-rating"><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="card-footer bg-transparent border-0">
-                            <div className="product-link d-flex align-items-center justify-content-center">
-                              <button className="btn btn-compare" data-toggle="tooltip" data-placement="top" title="Compare" type="button"><i className="las la-random" /> 
-                              </button>
-                              <button className="btn-cart btn btn-primary btn-animated mx-3" type="button"><i className="las la-shopping-cart mr-1" />
-                              </button>
-                              <button className="btn btn-view" data-toggle="tooltip" data-placement="top" title="Quick View"><span data-target="#quick-view" data-toggle="modal"><i className="las la-eye" /></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="card product-card">
-                        <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
-                        </button>
-                        <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../assets/images/electronic/product/03.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../assets/images/electronic/product/03.jpg`)} alt="..." />
-                        </Link>
-                        <div className="card-info">
-                          <div className="card-body">
-                            <div className="product-title"><Link className="link-title" to="/product-single-left/Woman/1">Film Roll And Kodak</Link>
-                            </div>
-                            <div className="mt-1"> <span className="product-price"><del className="text-muted">$12.00</del> $9.00</span>
-                              <div className="star-rating"><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="card-footer bg-transparent border-0">
-                            <div className="product-link d-flex align-items-center justify-content-center">
-                              <button className="btn btn-compare" data-toggle="tooltip" data-placement="top" title="Compare" type="button"><i className="las la-random" /> 
-                              </button>
-                              <button className="btn-cart btn btn-primary btn-animated mx-3" type="button"><i className="las la-shopping-cart mr-1" />
-                              </button>
-                              <button className="btn btn-view" data-toggle="tooltip" data-placement="top" title="Quick View"><span data-target="#quick-view" data-toggle="modal"><i className="las la-eye" /></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="item">
-                      <div className="card product-card">
-                        <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
-                        </button>
-                        <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../assets/images/electronic/product/04.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../assets/images/electronic/product/04.jpg`)} alt="..." />
-                        </Link>
-                        <div className="card-info">
-                          <div className="card-body">
-                            <div className="product-title"><Link className="link-title" to="/product-single-left/Woman/1">iphone 11 Pro</Link>
-                            </div>
-                            <div className="mt-1"> <span className="product-price"><del className="text-muted">$19.00</del> $13.00</span>
-                              <div className="star-rating"><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" /><i className="las la-star" />
-                              </div>
-                            </div>
-                          </div>
-                          <div className="card-footer bg-transparent border-0">
-                            <div className="product-link d-flex align-items-center justify-content-center">
-                              <button className="btn btn-compare" data-toggle="tooltip" data-placement="top" title="Compare" type="button"><i className="las la-random" /> 
-                              </button>
-                              <button className="btn-cart btn btn-primary btn-animated mx-3" type="button"><i className="las la-shopping-cart mr-1" />
-                              </button>
-                              <button className="btn btn-view" data-toggle="tooltip" data-placement="top" title="Quick View"><span data-target="#quick-view" data-toggle="modal"><i className="las la-eye" /></span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </OwlCarousel>
+                    <Specialproduct />
                 </div>
               </Row>
             </div>
@@ -248,7 +107,7 @@ class index4 extends Component {
               <Row>
                 <Col>
                   <div className="bg-white shadow p-5">
-                    <Newarrived />
+                    <NewarrivedElectonic />
                   </div>
                 </Col>
               </Row>

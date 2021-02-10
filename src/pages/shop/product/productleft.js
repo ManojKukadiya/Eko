@@ -477,8 +477,8 @@ class productleft extends Component {
                         <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
                         </button>
                         <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/02.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/01.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/main/02.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/main/01.jpg`)} alt="..." />
                         </Link>
                         <div className="card-info">
                           <div className="card-body">
@@ -507,8 +507,8 @@ class productleft extends Component {
                         <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
                         </button>
                         <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/12.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/11.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/main/12.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/main/11.jpg`)} alt="..." />
                         </Link>
                         <div className="card-info">
                           <div className="card-body">
@@ -537,8 +537,8 @@ class productleft extends Component {
                         <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
                         </button>
                         <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/14.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/13.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/main/14.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/main/13.jpg`)} alt="..." />
                         </Link>
                         <div className="card-info">
                           <div className="card-body">
@@ -567,8 +567,8 @@ class productleft extends Component {
                         <button className="btn-wishlist btn-sm" type="button" data-toggle="tooltip" data-placement="left" title="Add to wishlist"><i className="lar la-heart" />
                         </button>
                         <Link className="card-img-hover d-block" to="/product-single-left/Woman/1">
-                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/10.jpg`)} alt="..." />
-                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/09.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-back" src={require(`../../../assets/images/product/main/10.jpg`)} alt="..." />
+                          <img className="card-img-top card-img-front" src={require(`../../../assets/images/product/main/09.jpg`)} alt="..." />
                         </Link>
                         <div className="card-info">
                           <div className="card-body">

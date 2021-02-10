@@ -7,6 +7,7 @@ import CommingSoonCounter from '../../widgets/common/counter';
 import Herosection2 from '../../widgets/herosection/herosection2';
 import Clientlogo from '../../widgets/home1/clientlogo';
 import Newcollection2 from '../../widgets/home1/newcollection2';
+import Newsletter1 from '../../widgets/home1/newsletter1';
 import Newarrived from '../../widgets/home3/newarrived';
 
 class index3 extends Component {
@@ -57,19 +58,10 @@ class index3 extends Component {
                     <Row>
                       <Col md={6}> <span className="bg-primary py-1 px-2 d-inline-block rounded mb-3 text-white text-uppercase">Limited Offer</span>
                         <h2 className="mb-5 font-w-5">Weekly Sale on <span className="text-primary font-w-8">60% OFF</span> All Products</h2>
-                        <ul className="countdown list-inline d-flex">
+                        <ul className="mb-6 countdown list-inline d-flex">
                           <CommingSoonCounter time={'100150'} />
                         </ul>
-                        <div className="subscribe-form mt-6">
-                          <form id="mc-form" className="row align-items-center no-gutters mb-3">
-                            <Col>
-                              <input defaultValue name="EMAIL" className="email form-control input-2 bg-white" id="mc-email" placeholder="Email Address" required type="email" />
-                            </Col>
-                            <div className="col-auto">
-                              <input className="btn btn-primary overflow-auto" name="subscribe" defaultValue="Subscribe" type="submit" />
-                            </div>
-                          </form> <small>Get started for 1 Month free trial No Purchace required.</small>
-                        </div>
+                        <Newsletter1 />
                       </Col>
                     </Row>
                   </div>

@@ -11,7 +11,7 @@ function Rating(props) {
     return stars;
 }
 
-class Newarrived extends Component {
+class NewarrivedElectonic extends Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -23,7 +23,7 @@ class Newarrived extends Component {
                     <h5 className="mb-5 font-w-5"><span className="text-primary">—</span> New Arrived</h5>
                     {Productlist.filter(product => product.rating == 5).map((productdata, index) =>
                     (
-                        (index < 4) ?
+                        (index >= 9 && index < 13) ?
 
                             <div className="media align-items-center mb-4">
                                 <Link className="d-block mr-3" to={`/product-single-left/${productdata.category}/${productdata.id}`}>
@@ -45,7 +45,7 @@ class Newarrived extends Component {
                 <div className="col-lg-4 col-md-6 mt-8 mt-md-0">
                     <h5 className="mb-5 font-w-5"><span className="text-primary">—</span> Best Seller</h5>
                     {Productlist.map((productdata, index) => (
-                        (index >= 4 && index < 8) ?
+                         (index >= 12 && index < 16) ?
 
                             <div className="media align-items-center mb-4">
                                 <Link className="d-block mr-3" to={`/product-single-left/${productdata.category}/${productdata.id}`}>
@@ -67,7 +67,7 @@ class Newarrived extends Component {
                 <div className="col-lg-4 col-md-6 mt-8 mt-lg-0">
                     <h5 className="mb-5 font-w-5"><span className="text-primary">—</span> Featured Item</h5>
                     {Productlist.map((productdata, index) => (
-                       (index >= 2 && index < 6) ?
+                       (index >= 11 && index < 15) ?
                             <div className="media align-items-center mb-4">
                                 <Link className="d-block mr-3" to={`/product-single-left/${productdata.category}/${productdata.id}`}>
                                     <img className="rounded" src={require(`../../assets/images/${productdata.pictures[0]}`)} alt="Product" width={100} />
@@ -90,4 +90,4 @@ class Newarrived extends Component {
     }
 }
 
-export default Newarrived;
+export default NewarrivedElectonic;

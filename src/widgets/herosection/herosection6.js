@@ -35,8 +35,7 @@ class Herosection6 extends Component {
                 <OwlCarousel
                         className="banner-slider owl-carousel no-pb owl-2"
                         {...this.state.options}
-                        dotData="false"
-                        nav="true"
+                        dots={false}
                         navText={["<span class='las la-arrow-left'><span></span></span>","<span class='las la-arrow-right'><span></span></span>"]}
                     >
                     <div className="item bg-pos-rb" style={{ backgroundImage: `url(${require(`../../assets/images/kids/bg/01.jpg`)})` }}>
