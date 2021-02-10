@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'reactstrap';
-import { Parallax } from 'react-parallax';
+import { Parallax,Background } from 'react-parallax';
 import Herosection from '../../widgets/herosection/herosection';
 import Processstep from '../../widgets/home1/processstep';
 import Newcollection from '../../widgets/home1/newcollection';
@@ -52,10 +52,8 @@ class index extends Component {
           <section className="p-0">
             <div className="container-fluid pl-0">
               <Row>
-                <Col md={6} >
-                  <Parallax bgImage={require(`../../assets/images/bg/03.jpg`)} className="custom-py-3 rounded" bgImageAlt="bg_image" >
-                  </Parallax>
-                </Col>
+                <Col md={6} sm={5} className="custom-py-3 rounded"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/03.jpg`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} ></Col>
+
                 <Col md={6} className="col-sm-7 py-sm-0 py-5">
                   <div className="pl-lg-6 pr-lg-8 p-2 pt-sm-10"> <span className="bg-primary py-1 px-2 d-inline-block rounded mb-3 text-white text-uppercase">Limited Offer</span>
                     <h2 className="mb-5 font-w-5 line-h-1">Weekly Sale on<br /> <span className="text-primary font-w-8">60% OFF</span> All Products</h2>

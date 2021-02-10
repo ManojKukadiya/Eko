@@ -28,10 +28,7 @@ class Brand1 extends Component {
         return (
             <OwlCarousel
                 className="owl-carousel no-pb"
-                {...this.state.options}
-                center="true"
-                dotData=""
-                nav="true" >
+                {...this.state.options} >
                 <div className="item">
                     <img className="img-fluid d-inline" src={require(`../../assets/images/client/01.png`)} alt="" />
                 </div>

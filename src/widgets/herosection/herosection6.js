@@ -11,6 +11,7 @@ class Herosection6 extends Component {
             options: {
                 loop: true,
                 nav:true,
+                dots: false,
                 responsive:{
                     0: {
                         items: 1,
