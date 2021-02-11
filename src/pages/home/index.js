@@ -51,12 +51,8 @@ class index extends Component {
           <section className="p-0">
             <div className="container-fluid pl-0">
               <Row>
-<<<<<<< HEAD
-                <Col md={6} sm={5} className="custom-py-3 rounded"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/03.jpg`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}} ></Col>
+<Col md={6} sm={5} className="custom-py-3 rounded"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/03.jpg`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center -67.9312px'}} ></Col>
 
-=======
-                <Col md={6} sm={5} className="custom-py-3 rounded"  style={{ backgroundImage: `url(${require(`../../assets/images/bg/03.jpg`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundAttachment: 'fixed', backgroundPosition: 'center -67.9312px'}} ></Col>
->>>>>>> b42e80bc0f300cb8de8e4644e56dfde5ac66cf80
                 <Col md={6} className="col-sm-7 py-sm-0 py-5">
                   <div className="pl-lg-6 pr-lg-8 p-2 pt-sm-10"> <span className="bg-primary py-1 px-2 d-inline-block rounded mb-3 text-white text-uppercase">Limited Offer</span>
                     <h2 className="mb-5 font-w-5 line-h-1">Weekly Sale on<br /> <span className="text-primary font-w-8">60% OFF</span> All Products</h2>
