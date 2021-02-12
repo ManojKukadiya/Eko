@@ -8,7 +8,8 @@ class Testimonial extends Component {
         this.state = {
             options: {
                 loop: true,
-                nav:true,
+                nav:false,
+                dots:true,
                 responsive:{
                     0: {
                         items: 1,

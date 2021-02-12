@@ -28,7 +28,7 @@ a:hover {color: #f85438; text-decoration: none; }
 /* ------------------------
 Transition
 ------------------------*/
-a, i, .btn, button, img, span, .dropdown-item, .dropdown-toggle:after, .dropdown-menu a:before, .hover-translate, .btn-animated:before, .product-card, .card-body, .product-link, .insta-icon, .accordion .card-header a:before { -webkit-transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; }
+a, i, .btn, button, img, span, .dropdown-item, .dropdown-toggle:after, .dropdown-menu a:before, .hover-translate, .btn-animated:before, .product-card, .card-body, .product-link, .insta-icon, .accordion .accordion__panel p, .accordion .accordion__button:before { -webkit-transition: all 0.5s ease-in-out 0s; -moz-transition: all 0.5s ease-in-out 0s; -ms-transition: all 0.5s ease-in-out 0s; -o-transition: all 0.5s ease-in-out 0s; transition: all 0.5s ease-in-out 0s; }
 .hover-zoom:hover { -webkit-transform: scale(1.1); -moz-transform: scale(1.1); transform: scale(1.1); }
 
 .site-header i:hover, .product-card .product-link .btn:hover i{-moz-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94); -o-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94); -webkit-transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94); transition: all 600ms cubic-bezier(0.99, 0, 0.57, 0.94); -moz-transform: rotate(360deg); -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);}
@@ -349,13 +349,15 @@ Modal Popup
 /* ------------------------
     Accordion
 ------------------------*/
-.accordion .card-header { background: none; border: none; position: relative; padding: 0; }
-.accordion .card-header a { font-weight: 400; text-transform: capitalize; display: inline-block; width: 100%; }
-.accordion .card-header a:before { width: 20px; height: 20px; border-radius: 50%; text-align: center; line-height: 20px; background: #f5f9fc; content: "\f107"; font-family: 'Line Awesome Free'; font-weight: 900; font-size: 0.7rem; top: 50%; position: absolute; right: 0; margin-top: -10px; }
-.accordion .card .card-header a[aria-expanded="true"] { color: #fe4c1c; }
-.accordion .card .card-header a[aria-expanded="true"]:before { background: #fe4c1c; color: #ffffff; transform: rotate(180deg); }
-.accordion .card-body { padding: 15px; line-height: 2; }
-.accordion .card-body li a { font-size: 0.9rem; color: #042825 }
+.accordion {border: none; border-radius: 0}
+.accordion__item{margin-bottom: 1.5rem}
+.accordion__item + .accordion__item {border-top: none;}
+.accordion__heading:focus, .accordion__button:focus{outline: none !important;}
+.accordion .accordion__button {background: none; border: none; font-size: 18px; font-weight: 400; text-transform: capitalize; display: inline-block; padding: 0; position: relative;}
+.accordion .accordion__button:before {color: #042825; border: none; transform: none; width: 20px; height: 20px; border-radius: 50%; text-align: center; line-height: 20px; background: #f5f9fc; content: "\f107"; font-family: 'Line Awesome Free'; font-weight: 900; font-size: 0.7rem; top: 50%; position: absolute; right: 0; margin-top: -10px; }
+.accordion .accordion__button[aria-expanded="true"]:before { background: #fe4c1c; color: #ffffff; transform: rotate(180deg); }
+.accordion .accordion__panel { padding: 15px; line-height: 2; }
+.accordion .accordion__panel p { margin-bottom: 0 }
 
 .error{
     color: red;
