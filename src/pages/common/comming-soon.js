@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Row } from 'reactstrap';
 import CommingSoonCounter from '../../widgets/common/counter';
+import Newsletter1 from '../../widgets/home1/newsletter1';
 
 class commingsoon extends Component {
     constructor(props) {
@@ -29,16 +30,7 @@ class commingsoon extends Component {
                                                 </ul>
                                                 <div className="mt-5">
                                                     <h4 className="title z-index-1 mb-2">Subscribe to get notified!</h4>
-                                                    <div className="subscribe-form">
-                                                        <form id="mc-form1" className="row align-items-center no-gutters mb-3">
-                                                            <Col>
-                                                                <input name="EMAIL" className="email form-control input-2 bg-white" id="mc-email1" placeholder="Email Address" type="text" />
-                                                            </Col>
-                                                            <div className="col-auto">
-                                                                <input className="btn btn-primary overflow-auto" name="subscribe" defaultValue="Subscribe" type="submit" />
-                                                            </div>
-                                                        </form> <small>Get started for 1 Month free trial No Purchace required.</small>
-                                                    </div>
+                                                    <Newsletter1 />
                                                 </div>
                                             </div>
                                         </div>

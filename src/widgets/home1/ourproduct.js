@@ -227,7 +227,7 @@ class Ourproduct extends Component {
                                             {...this.state.options}
                                         >
                                             {Productlist.map((productdata, index) => (
-                                                (index > 10 && index < 16) ?
+                                                (index > 3 && index < 9) ?
                                                     <div className="item">
                                                         <div className="card product-card">
                                                             {!this.WishlistItems(productdata.id) ?
@@ -277,7 +277,7 @@ class Ourproduct extends Component {
                                             {...this.state.options}
                                         >
                                             {Productlist.map((productdata, index) => (
-                                                (index > 20 && index < 26) ?
+                                                (index > 2 && index < 7) ?
                                                     <div className="item">
                                                         <div className="card product-card">
                                                             {!this.WishlistItems(productdata.id) ?

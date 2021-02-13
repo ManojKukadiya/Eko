@@ -48,6 +48,7 @@ import productright from './pages/shop/product/productright';
 import cart from './pages/shop/cart';
 import checkout from './pages/shop/checkout';
 import ordercomplate from './pages/shop/ordercomplate';
+import wishlist from './pages/shop/wishlist';
 
 
 class App extends React.Component {
@@ -125,6 +126,7 @@ class App extends React.Component {
             <Route path={`/product-single-left/:category/:id`} component={productleft} />
             <Route path={`/product-single-right/:category/:id`} component={productright} />
             <Route path="/cart" component={cart} />
+            <Route path="/wishlist" component={wishlist} />
             <Route path="/checkout" component={checkout} />
             <Route path="/order-complate" component={ordercomplate} /> 
 

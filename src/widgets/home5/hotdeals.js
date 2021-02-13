@@ -118,7 +118,7 @@ class HotDealsProduct extends Component {
                     navText={["<span class='la la-angle-left'><span></span></span>","<span class='la la-angle-right'><span></span></span>"]}
                   >
                     {Productlist.map((productdata, index) =>
-                        (index >= 9 && index < 14) ?
+                        (index >= 19 && index < 23) ?
                             <div className="item">
                                 <div className="card product-card">
                                     {!this.WishlistItems(productdata.id) ?

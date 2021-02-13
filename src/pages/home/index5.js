@@ -112,8 +112,7 @@ class index5 extends Component {
           </section>
           {/*hot deal end*/}
           {/*product ad start*/}
-          <Parallax bgImage={require(`../../assets/images/furniture/01.png`)} bgClassName="custom-py-1" >
-            <section>
+           <section style={{ backgroundImage: `url(${require(`../../assets/images/furniture/01.png`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
               <Container>
                 <Row>
                   <div className="col-12 col-lg-6">
@@ -124,7 +123,6 @@ class index5 extends Component {
                 </Row>
               </Container>
             </section>
-          </Parallax>
           {/*product ad end*/}
           {/*blog start*/}
           <section>

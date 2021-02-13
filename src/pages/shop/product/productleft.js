@@ -161,7 +161,7 @@ class productleft extends Component {
                       <OwlCarousel
                         className="owl-carousel"
                         id="imageGallery"
-                        dotData={true}
+                        dots={false}
                         items={1}
                         autoplay={true}
                       >
@@ -206,9 +206,9 @@ class productleft extends Component {
                             {SelectedProduct.colors.map((color, index) => {
                               return (
                                 <div className="form-check pl-0 mr-3">
-                                  <input type="radio" value={color} id={`color-filter${index}`} className="form-check-input" checked={this.state.selectedColor === color}
+                                  <input type="checkbox" value={color} id={`color-filter${index}`} className="form-check-input" checked={this.state.selectedColor === color}
                                     onChange={this.onChangeColor} />
-                                  <label className="form-check-label" htmlFor={`color-filter${index}`} style={{ background: color }} />
+                                    <label className="form-check-label" htmlFor={`color-filter${index}`} style={{ background: color }} />
                                 </div>
                               )
                             }

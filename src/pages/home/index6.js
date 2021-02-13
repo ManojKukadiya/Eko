@@ -83,9 +83,7 @@ class index6 extends Component {
               </section>
               {/*product end*/}
               {/*product ad start*/}
-              <Parallax bgImage={require(`../../assets/images/kids/bg/03.jpg`)} bgClassName="custom-py-1" >
-
-              <section>
+              <section style={{ backgroundImage: `url(${require(`../../assets/images/kids/bg/03.jpg`)})` , backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
                 <Container>
                   <Row className="justify-content-center text-center">
                     <Col lg={8} className="col-12"> 
@@ -95,7 +93,6 @@ class index6 extends Component {
                   </Row>
                 </Container>
               </section>
-              </Parallax>
               {/*product ad end*/}
               {/*product start*/}
               <section>
