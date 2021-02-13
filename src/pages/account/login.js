@@ -25,7 +25,7 @@ class login extends Component {
                     <section>
                         <Container>
                             <Row className="justify-content-center">
-                                <div className="col-5">
+                                <div className="col-lg-5">
                                     <div className="shadow p-3">
                                         <img className="img-fluid mb-5" src={require(`../../assets/images/login.png`)} alt="" />
                                         <h3 className="text-center mb-3 text-uppercase">User Login</h3>

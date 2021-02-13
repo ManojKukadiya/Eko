@@ -126,9 +126,8 @@ class Ourproduct extends Component {
                 <ToastContainer autoClose={900} />
 
                 <Row>
-                    <Col>
-                        <Nav tabs className="mb-5 text-center">
-                            <div className="nav nav-tabs d-inline-block justify-content-md-end" id="nav-tab" role="tablist">
+                    <Col className="mb-5 text-center">
+                        <Nav tabs className="mb-5 text-center nav nav-tabs d-inline-block" id="nav-tab" role="tablist">
                                 <NavItem>
                                     <NavLink
                                         className={classnames({ active: this.state.activeTab === '1' })}
@@ -153,7 +152,6 @@ class Ourproduct extends Component {
                                         Best Seller
                                     </NavLink>
                                 </NavItem>
-                            </div>
                         </Nav>
                         <TabContent className="p-0" activeTab={this.state.activeTab}>
                             <TabPane className="fade show" tabId="1">
