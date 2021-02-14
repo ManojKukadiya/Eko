@@ -31,6 +31,7 @@ class Header extends Component {
         this.cartview = this.cartview.bind(this)
         this.GetCartItems = this.GetCartItems.bind(this);
         this.handleScroll = this.handleScroll.bind(this);
+        this.toggle = this.toggle.bind(this)
     }
     componentDidMount() {
         window.scrollTo(0, 0);
@@ -55,9 +56,9 @@ class Header extends Component {
         }));
     }
     toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
+        this.setState(prevState => ({
+            isOpen: !prevState.isOpen
+        }));
     }
     handleClick(event) {
         var elems = document.querySelectorAll(".childsubmenu");
@@ -126,7 +127,7 @@ class Header extends Component {
                                                             </DropdownMenu>
                                                         </UncontrolledDropdown>
                                                         : (navlink.type && navlink.type === 'megaMenu') ?
-                                                            <UncontrolledDropdown nav inNavbar key={index} className="ma">
+                                                            <UncontrolledDropdown nav inNavbar key={index} >
                                                                 <DropdownToggle nav caret >
                                                                     {navlink.menu_title}
                                                                 </DropdownToggle>
@@ -156,7 +157,7 @@ class Header extends Component {
                                                             </UncontrolledDropdown>
                                                             :
                                                             <NavItem>
-                                                                <Link to={navlink.path}> {navlink.menu_title}</Link>
+                                                                <Link to={navlink.path} className="nav-link"> {navlink.menu_title}</Link>
                                                             </NavItem>
                                                 ))}
                                             </Nav>
