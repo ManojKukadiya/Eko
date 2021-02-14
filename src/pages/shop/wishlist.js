@@ -70,7 +70,7 @@ class wishlist extends Component {
   render() {
     return (
       <>
-       <ToastContainer autoClose={900} />
+        <ToastContainer autoClose={900} />
         {/*hero section start*/}
         <section className="bg-light">
           <Pageheading foldername={"Shop"} title={"Product Wishlist"} />
@@ -89,7 +89,7 @@ class wishlist extends Component {
                           <tr>
                             <th scope="col">Product</th>
                             <th scope="col">Price</th>
-                            <th scope="col">Total</th>
+                            <th scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -107,13 +107,11 @@ class wishlist extends Component {
                                 </div>
                               </td>
                               <td> <span className="product-price text-muted">
-                                ${CartItem.Rate.toLocaleString(navigator.language, { minimumFractionDigits: 0 })}
-                              </span>
-                              </td>
-                              <td> <span className="product-price text-dark font-w-6">
                                 ${(CartItem.Rate * CartItem.Qty).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}
-                              </span>
-                                <Link type="submit" className="btn btn-primary btn-sm" onClick={() => this.RemoveItem(index)}><i className="las la-times" />
+                                </span>
+                              </td>
+                              <td>
+                                <Link type="submit" className="btn btn-primary btn-sm" onClick={() => this.RemoveItem(index)}><i className="las la-trash-alt" />
                                 </Link>
                                 {!this.CartItems(CartItem.ProductID) ?
                                   <Link to="#" onClick={() => this.Productaddcart(CartItem.ProductID, CartItem.ProductName, CartItem.ProductImage, 1, CartItem.Rate, "In Stock")} className="btn-cart btn btn-primary btn-animated mx-3" rel="nofollow" id="addtocard"><i className="las la-shopping-cart mr-1" /></Link>
