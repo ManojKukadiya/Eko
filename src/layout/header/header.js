@@ -190,11 +190,7 @@ class Header extends Component {
                 </header>
 
                 <Modal isOpen={this.state.cartview} toggle={this.cartview} className="cart-modal">
-                    <ModalHeader>
-                        <h5 className="modal-title" id="ModalLabel">Your Cart (2)</h5>
-                        <button type="button" className="close" onClick={() => this.cartview()}> <span aria-hidden="true">×</span>
-                        </button>
-                    </ModalHeader>
+                    <ModalHeader toggle={this.cartview}>Your Cart (2)</ModalHeader>
                     <ModalBody>
                         {(this.GetCartItems() != null && this.GetCartItems().length > 0) ?
                             <>
