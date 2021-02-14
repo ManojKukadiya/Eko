@@ -81,10 +81,10 @@ class wishlist extends Component {
           <section>
             <Container>
               {(this.GetWishlistItems() != null && this.GetWishlistItems().length > 0) ?
-                <Row>
-                  <div className="col-lg-12">
+                <Row className="align-items-center">
+                  <div className="col-lg-9">
                     <div className="table-responsive">
-                      <table className="cart-table table">
+                      <table className="cart-table table border mb-0">
                         <thead>
                           <tr>
                             <th className="text-left" scope="col">Product</th>
@@ -125,9 +125,9 @@ class wishlist extends Component {
                         </tbody>
                       </table>
                     </div>
-                    <div className="d-md-flex align-items-end justify-content-end border-top pt-5">
-                      <Link to="cart" className="btn btn-primary btn-animated mt-3 mt-md-0">View Cart</Link>
-                    </div>
+                  </div>
+                  <div className="col-lg-3 text-right mt-5 mt-lg-0">
+                    <Link to="cart" className="btn btn-primary btn-animated"><i class="las la-shopping-cart mr-1"></i> View Cart</Link>
                   </div>
                 </Row>
                 :
