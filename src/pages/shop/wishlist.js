@@ -87,9 +87,10 @@ class wishlist extends Component {
                       <table className="cart-table table">
                         <thead>
                           <tr>
-                            <th scope="col">Product</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Action</th>
+                            <th className="text-left" scope="col">Product</th>
+                            <th className="text-left" scope="col">Price</th>
+                            <th className="text-left" scope="col">Delete</th>
+                            <th className="text-left" scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -113,6 +114,8 @@ class wishlist extends Component {
                               <td>
                                 <Link type="submit" className="btn btn-primary btn-sm" onClick={() => this.RemoveItem(index)}><i className="las la-trash-alt" />
                                 </Link>
+                              </td>
+                              <td>
                                 {!this.CartItems(CartItem.ProductID) ?
                                   <Link to="#" onClick={() => this.Productaddcart(CartItem.ProductID, CartItem.ProductName, CartItem.ProductImage, 1, CartItem.Rate, "In Stock")} className="btn-cart btn btn-primary btn-animated mx-3" rel="nofollow" id="addtocard"><i className="las la-shopping-cart mr-1" /></Link>
                                   :
@@ -125,7 +128,7 @@ class wishlist extends Component {
                         </tbody>
                       </table>
                     </div>
-                    <div className="d-md-flex align-items-end justify-content-between border-top pt-5">
+                    <div className="d-md-flex align-items-end justify-content-end border-top pt-5">
                       <Link to="cart" className="btn btn-primary btn-animated mt-3 mt-md-0">View Cart</Link>
                     </div>
                   </div>
