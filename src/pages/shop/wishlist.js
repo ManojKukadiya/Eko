@@ -89,7 +89,7 @@ class wishlist extends Component {
                           <tr>
                             <th className="text-left" scope="col">Product</th>
                             <th className="text-left" scope="col">Price</th>
-                            <th className="text-left" scope="col">Action</th>
+                            <th className="text-right" scope="col">Action</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -110,7 +110,7 @@ class wishlist extends Component {
                                 ${(CartItem.Rate * CartItem.Qty).toLocaleString(navigator.language, { minimumFractionDigits: 0 })}
                                 </span>
                               </td>
-                              <td>
+                              <td className="text-right">
                                 <Link type="submit" className="btn btn-primary btn-animated" onClick={() => this.RemoveItem(index)}><i className="las la-trash-alt" />
                                 </Link>
                                 {!this.CartItems(CartItem.ProductID) ?
