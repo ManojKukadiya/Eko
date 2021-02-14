@@ -89,7 +89,6 @@ class wishlist extends Component {
                           <tr>
                             <th className="text-left" scope="col">Product</th>
                             <th className="text-left" scope="col">Price</th>
-                            <th className="text-left" scope="col">Delete</th>
                             <th className="text-left" scope="col">Action</th>
                           </tr>
                         </thead>
@@ -112,14 +111,12 @@ class wishlist extends Component {
                                 </span>
                               </td>
                               <td>
-                                <Link type="submit" className="btn btn-primary btn-sm" onClick={() => this.RemoveItem(index)}><i className="las la-trash-alt" />
+                                <Link type="submit" className="btn btn-primary btn-animated" onClick={() => this.RemoveItem(index)}><i className="las la-trash-alt" />
                                 </Link>
-                              </td>
-                              <td>
                                 {!this.CartItems(CartItem.ProductID) ?
                                   <Link to="#" onClick={() => this.Productaddcart(CartItem.ProductID, CartItem.ProductName, CartItem.ProductImage, 1, CartItem.Rate, "In Stock")} className="btn-cart btn btn-primary btn-animated mx-3" rel="nofollow" id="addtocard"><i className="las la-shopping-cart mr-1" /></Link>
                                   :
-                                  <Link to="/cart" className="btn-cart btn btn-primary btn-animated mx-3" rel="nofollow" id="viewcart"><i className="las la-cart-plus mr-1" /></Link>
+                                  <Link to="/cart" className="btn-cart btn btn-primary btn-animated ml-3" rel="nofollow" id="viewcart"><i className="las la-cart-plus mr-1" /></Link>
 
                                 }
                               </td>
