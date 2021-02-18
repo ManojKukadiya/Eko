@@ -10,7 +10,7 @@ class Instafeed extends Component {
     render() {
         return (
             <Row className="no-gutters">
-                <Col sm={8} md={4} className="order-md-1 align-items-center d-flex justify-content-center bg-dark p-5">
+                <Col sm={8} md={4} className="col-md-8 col-lg-4 order-lg-1 align-items-center d-flex justify-content-center bg-dark p-5">
                     <div className="d-flex align-items-center">
                         <img className="img-fluid" src={require(`../../assets/images/insta/instagram-logo.png`)} alt="" />
                         <div className="ml-3">
@@ -19,28 +19,28 @@ class Instafeed extends Component {
                         </div>
                     </div>
                 </Col>
-                <Col sm={4} md={2} className="col-6">
+                <Col sm={4} md={2} className="col-6 col-md-4 col-lg-2">
                     <Link className="insta-item" to="#">
                         <img className="img-fluid" src={require(`../../assets/images/insta/01.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
-                <Col sm={4} md={2} className="col-6">
+                <Col sm={4} md={2} className="col-6 col-md-4 col-lg-2">
                     <Link className="insta-item" to="#">
                         <img className="img-fluid" src={require(`../../assets/images/insta/02.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
-                <Col sm={4} md={2} className="col-6 order-md-1">
+                <Col sm={4} md={2} className="col-6 col-md-4 col-lg-2 order-lg-1">
                     <Link className="insta-item" to="#">
                         <img className="img-fluid" src={require(`../../assets/images/insta/03.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />
                         </div>
                     </Link>
                 </Col>
-                <Col sm={4} md={2} className="col-6 order-md-1">
+                <Col sm={4} md={2} className="col-6 col-md-4 col-lg-2 order-lg-1">
                     <Link className="insta-item" to="#">
                         <img className="img-fluid" src={require(`../../assets/images/insta/04.jpg`)} alt="" />
                         <div className="insta-icon"><i className="lab la-instagram" />

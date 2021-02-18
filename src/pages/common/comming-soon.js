@@ -15,7 +15,7 @@ class commingsoon extends Component {
         return (
             <div className="page-content">
                 {/*coming soon start*/}
-                <section className="fullscreen-banner py-8 o-hidden bg-pos-r bg-primary" style={{ backgroundImage: `url(${require(`../../assets/images/bg/07.png`)})` }}>
+                <section className="py-8 o-hidden bg-pos-r bg-primary" style={{ backgroundImage: `url(${require(`../../assets/images/bg/07.png`)})` }}>
                     <div className="container-fluid px-md-8 h-100">
                         <Row className="h-100 align-items-center">
                             <div className="col-12 h-100">
