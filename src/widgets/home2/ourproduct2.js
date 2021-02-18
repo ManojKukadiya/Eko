@@ -118,6 +118,7 @@ class Ourproduct2 extends Component {
                         <OwlCarousel
                             className="owl-carousel no-pb owl-2"
                             {...this.state.options}
+                            navText={["<span class='la la-angle-left'><span></span></span>","<span class='la la-angle-right'><span></span></span>"]}
                         >
                             {Productlist.filter(product => product.rating == 5).map((productdata, index) => (
                                 (index < 6) ?
