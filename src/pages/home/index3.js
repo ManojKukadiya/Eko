@@ -59,7 +59,7 @@ class index3 extends Component {
                       <Col md={6}> <span className="bg-primary py-1 px-2 d-inline-block rounded mb-3 text-white text-uppercase">Limited Offer</span>
                         <h2 className="mb-5 font-w-5">Weekly Sale on <span className="text-primary font-w-8">60% OFF</span> All Products</h2>
                         <ul className="mb-6 countdown list-inline d-flex">
-                          <CommingSoonCounter time={'100150'} />
+                          <CommingSoonCounter time={'500150'} />
                         </ul>
                         <Newsletter1 />
                       </Col>

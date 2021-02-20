@@ -25,7 +25,7 @@ class Headerlogo extends Component {
                             <div className="right-nav align-items-center d-flex justify-content-end">
                                 <form className="form-inline border rounded w-100">
                                     <select className="custom-select border-0 rounded-0 bg-light form-control d-none d-lg-inline">
-                                        <option selected>All Categories</option>
+                                        <option value={0}>All Categories</option>
                                         <option value={1}>Men</option>
                                         <option value={2}>Women</option>
                                         <option value={3}>Kids</option>

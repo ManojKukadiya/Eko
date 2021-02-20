@@ -96,7 +96,7 @@ class Newcollection extends Component {
         <Row>
           <ToastContainer autoClose={900} />
           {Productlist.map((productdata, index) => (index < 8) ?
-            <Col xl={3} lg={4} md={6}>
+            <Col xl={3} lg={4} md={6} key={index}>
               <div className="card product-card">
                 {!this.WishlistItems(productdata.id) ?
                   <Link to="#" onClick={() => this.Productaddwishlist(productdata.id, productdata.name, productdata.pictures[0], 1, productdata.salePrice, "In Stock")} className="btn-wishlist btn-sm" id="addtowish"><i className="lar la-heart" /></Link>
@@ -119,9 +119,9 @@ class Newcollection extends Component {
                   <div className="card-footer bg-transparent border-0">
                     <div className="product-link d-flex align-items-center justify-content-center">
                       {!this.WishlistItems(productdata.id) ?
-                        <Link to="#" onClick={() => this.Productaddwishlist(productdata.id, productdata.name, productdata.pictures[0], 1, productdata.salePrice, "In Stock")} className="btn btn-compare" id="addtowish1"><i class="lar la-heart mr-1" ></i></Link>
+                        <Link to="#" onClick={() => this.Productaddwishlist(productdata.id, productdata.name, productdata.pictures[0], 1, productdata.salePrice, "In Stock")} className="btn btn-compare" id="addtowish1"><i className="lar la-heart mr-1" ></i></Link>
                         :
-                        <Link to="/cart" className="btn btn-compare" id="viewwishlist1"><i class="las la-heart mr-1" ></i></Link>
+                        <Link to="/cart" className="btn btn-compare" id="viewwishlist1"><i className="las la-heart mr-1" ></i></Link>
                       }
                       {!this.CartItems(productdata.id) ?
                         <Link to="#" onClick={() => this.Productaddcart(productdata.id, productdata.name, productdata.pictures[0], 1, productdata.salePrice, "In Stock")} className="btn-cart btn btn-primary btn-animated mx-3" rel="nofollow" id="addtocard1"><i className="las la-shopping-cart mr-1" /></Link>
@@ -136,7 +136,7 @@ class Newcollection extends Component {
               </div>
             </Col>
             :
-            <div></div>
+            <div key={index}></div>
           )}
         </Row>
         <Modal isOpen={this.state.modelview} toggle={this.modelview} className="view-modal">

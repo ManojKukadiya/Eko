@@ -10,6 +10,7 @@ import Blogcart from '../../widgets/blog/blogcart';
 import Processstep1 from '../../widgets/home4/processstep1';
 import Specialproduct from '../../widgets/home4/specialproduct';
 import NewarrivedElectonic from '../../widgets/home4/newarrivedelectonic';
+import ElectronicBlog from '../../widgets/blog/electronicblog';
 
 
 class index4 extends Component {
@@ -84,7 +85,7 @@ class index4 extends Component {
                   <div className="p-5"> <span className="bg-primary py-1 px-2 d-inline-block rounded mb-3 text-white text-uppercase">Limited Offer</span>
                     <h2 className="mb-5 font-w-5 line-h-1 text-white">Weekly Sale<br /> <span className="text-primary font-w-8">60% OFF</span> All Products</h2>
                     <ul className="countdown list-inline d-flex text-white" >
-                      <CommingSoonCounter  time={'100150'} />
+                      <CommingSoonCounter  time={'500150'} />
                     </ul>
                   </div>
                 </div>
@@ -154,7 +155,7 @@ class index4 extends Component {
                 </Col>
               </Row>
               {/* / .row */}
-              <Blogcart />
+              <ElectronicBlog />
               <Row className="justify-content-center text-center mt-5">
                 <Col> <Link className="btn btn-dark" to="/blog-card">View All Blog</Link>
                 </Col>

@@ -10,6 +10,7 @@ import Blogcart from '../../widgets/blog/blogcart';
 import OurproductFurniture from '../../widgets/home5/ourproductfurniture';
 import Newsletter1 from '../../widgets/home1/newsletter1';
 import HotDealsProduct from '../../widgets/home5/hotdeals';
+import FurnitureBlog from '../../widgets/blog/furnitureblog';
 
 class index5 extends Component {
   constructor(props) {
@@ -99,7 +100,7 @@ class index5 extends Component {
                       <h2 className="mb-0">Exclusive Hot Deal Ends Soon!</h2>
                     </div>
                     <ul className="countdown list-inline d-flex my-5">
-                      <CommingSoonCounter time={'100150'} />
+                      <CommingSoonCounter time={'500150'} />
                     </ul> 
                     <Newsletter1 />
                   </div>
@@ -138,7 +139,7 @@ class index5 extends Component {
                 </Col>
               </Row>
               {/* / .row */}
-              <Blogcart />
+              <FurnitureBlog />
               <Row className="justify-content-center text-center mt-5">
                 <Col> <Link className="btn btn-dark" to="/blog-card">View All Blog</Link>
                 </Col>

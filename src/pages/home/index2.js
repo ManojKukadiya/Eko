@@ -115,7 +115,7 @@ class index2 extends Component {
                     <h2 className="mb-0">Hot Deal Today</h2>
                   </div>
                   <ul className="countdown list-inline d-flex my-5">
-                    <CommingSoonCounter time={'100150'} />
+                    <CommingSoonCounter time={'500150'} />
                   </ul>
                   <Newsletter1 />
                 </div>

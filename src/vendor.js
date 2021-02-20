@@ -9,8 +9,3 @@ import 'antd/dist/antd.css';
 
 import '../src/assets/css/theme-plugin.css';
 import '../src/assets/css/theme.min.css';
- 
-
-
-// import '../src/assets/js/theme-plugin.js';
-// import '../src/assets/js/theme-script.js';

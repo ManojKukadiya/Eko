@@ -134,14 +134,14 @@ class Header extends Component {
                                                                 <DropdownMenu id={`submenu_${index}`} className="custom-drop childsubmenu">
                                                                     <div className="container p-0">
                                                                         <Row className="w-100 no-gutters">
-                                                                            {navlink.child_routes && navlink.child_routes.map((subnavlink, index) => (
-                                                                                <div className="col-12 col-md-4 p-3">
+                                                                            {navlink.child_routes && navlink.child_routes.map((subnavlink, subnav) => (
+                                                                                <div className="col-12 col-md-4 p-3" key={subnav}>
                                                                                     {/* Heading */}
                                                                                     <div className="mb-2 font-weight-bold">{subnavlink.menu_title}</div>
                                                                                     {/* Links */}
                                                                                     <ul className="list-unstyled">
-                                                                                        {subnavlink.child_routes && subnavlink.child_routes.map((megamenu, index) => (
-                                                                                            <li >
+                                                                                        {subnavlink.child_routes && subnavlink.child_routes.map((megamenu, i) => (
+                                                                                            <li key={i}>
                                                                                                 <Link to={megamenu.path} onClick={this.handleClick.bind(this)}>{megamenu.menu_title}</Link>
                                                                                             </li>
                                                                                         ))}
@@ -156,7 +156,7 @@ class Header extends Component {
                                                                 </DropdownMenu>
                                                             </UncontrolledDropdown>
                                                             :
-                                                            <NavItem>
+                                                            <NavItem key={index}>
                                                                 <Link to={navlink.path} className="nav-link"> {navlink.menu_title}</Link>
                                                             </NavItem>
                                                 ))}

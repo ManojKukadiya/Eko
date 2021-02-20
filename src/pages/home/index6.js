@@ -10,6 +10,7 @@ import Blogcart from '../../widgets/blog/blogcart';
 import OurProductKids from '../../widgets/home6/ourproductkids';
 import TradingProduct from '../../widgets/home6/tradingproduct';
 import Newsletter1 from '../../widgets/home1/newsletter1';
+import KidsBlog from '../../widgets/blog/kidsblog';
 
 class index6 extends Component {
     constructor(props) {
@@ -150,7 +151,7 @@ class index6 extends Component {
                       </div>
                     </Col>
                   </Row>
-                  <Blogcart />
+                  <KidsBlog />
                   <Row className="justify-content-center text-center mt-5">
                     <Col> <Link className="btn btn-dark" to="/blog-card">View All Blog</Link>
                     </Col>
